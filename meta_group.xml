@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="E:/automation/automation/src/test/java/metagroup_demo">
+      <groups>
+          <define name="all_test">
+              <include name="smoke"/>
+              <include name="regression"/>
+              <include name="sanity"/>
+          </define>
+          <run>
+              <include name="all_test"/>
+
+          </run>
+
+
+      </groups>
+        <classes>
+            <class name="metagroup_demo.class_a"></class>
+            <class name="metagroup_demo.class_b"></class>
+        </classes>
+
+
+    </test>
+</suite>
