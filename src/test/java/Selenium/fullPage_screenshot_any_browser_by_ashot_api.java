@@ -18,6 +18,7 @@ public class fullPage_screenshot_any_browser_by_ashot_api {
         WebDriver driver=new ChromeDriver();
         driver.manage().window().maximize();
         driver.get("https://omayo.blogspot.com/");
+        driver.get("https://omayo.blogspot.com/");
 
         Screenshot screenshot=new AShot().shootingStrategy(ShootingStrategies.viewportPasting(3000)).takeScreenshot(driver);
         File dest=new File("./omayo2/AShot.png");
